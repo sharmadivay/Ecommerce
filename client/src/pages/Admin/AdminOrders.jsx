@@ -22,7 +22,8 @@ const AdminOrders = () => {
   const getOrders = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/auth/all-orders"
+        "ecommerce-wine-six.vercel.app
+/api/auth/all-orders"
       );
       setOrders(data);
     } catch (error) {
@@ -37,7 +38,8 @@ const AdminOrders = () => {
   const handleChange = async (orderId, value) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:8080/api/auth/order-status/${orderId}`,
+        `ecommerce-wine-six.vercel.app
+/api/auth/order-status/${orderId}`,
         {
           status: value,
         }
