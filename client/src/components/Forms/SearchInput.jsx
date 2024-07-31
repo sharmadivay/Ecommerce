@@ -10,7 +10,8 @@ const SearchInput = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/product/search/${values.keyword}`
+        `ecommerce-wine-six.vercel.app
+/api/product/search/${values.keyword}`
       );
       setValues({ ...values, results: data });
       navigate("/search");
